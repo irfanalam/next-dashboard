@@ -1,3 +1,5 @@
+import '@/app/ui/global.css';
+import { oswald } from '@/app/ui/fonts';
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${oswald.className} antialiased`}>{children}</body>
     </html>
   );
 }
